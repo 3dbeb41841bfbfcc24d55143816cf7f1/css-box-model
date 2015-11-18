@@ -1,7 +1,4 @@
-# css-box-model
-Introduction to css box model
-
-# Intro to CSS
+# Intro to CSS and Box Model
 
 [FEWD Slides](http://jrosebud.github.io/)
 
