@@ -10,7 +10,34 @@ competencies: Front-end intro
 
 # CSS Box Model and Positioning
 
-### Objectives
+## Table of Contents
+  * [Objectives](#objectives)
+  * [Preparation](#preparation)
+  * [Framing (5 / 5)](#framing-5-/-5)
+  * [Layout: Turn & Talk (5 / 10)](#layout:-turn-&-talk-5-/-10)
+  * [Box Model Demo - Codealong (5 mins)](#box-model-demo---codealong-5-mins)
+  * [The Box Model and its components - Intro (10 mins)](#the-box-model-and-its-components---intro-10-mins)
+    * [Layers of the Box Model - Codealong (15 mins)](#layers-of-the-box-model---codealong-15-mins)
+    * [Margin](#margin)
+    * [Border](#border)
+    * [Padding and Content](#padding-and-content)
+  * [Taking Up Space using Display - Intro (15 mins)](#taking-up-space-using-display---intro-15-mins)
+  * [Positioning - Codealong (10 mins)](#positioning---codealong-10-mins)
+    * [Relative Positioning](#relative-positioning)
+    * [Static Positioning](#static-positioning)
+    * [Fixed Positioning](#fixed-positioning)
+    * [Absolute Positioning](#absolute-positioning)
+    * [Relative Positioning](#relative-positioning)
+  * [Floats and Clears - Intro (10 min)](#floats-and-clears---intro-10-min)
+    * [Clear](#clear)
+    * [Using position, floats, and clears to create columns - Code along (20 mins)](#using-position-floats-and-clears-to-create-columns---code-along-20-mins)
+    * [Floats to create multicolumn layouts](#floats-to-create-multicolumn-layouts)
+    * [Floats with clears](#floats-with-clears)
+  * [Conclusion (5 mins)](#conclusion-5-mins)
+  * [Addtional Resources](#addtional-resources)
+  * [Sample Quiz Questions](#sample-quiz-questions)
+
+## Objectives
 *After this lesson, students will be able to:*
 
 - Describe the difference between block, inline, and inline-block elements
@@ -19,7 +46,7 @@ competencies: Front-end intro
 - Explain the difference between and use cases of static, relative, fixed, & absolute positioning
 - Create a page with multicolumn layout
 
-### Preparation
+## Preparation
 *Before this lesson, students should already be able to:*
 
 - Write basic CSS
@@ -126,12 +153,12 @@ But what do these different layers mean, and how are they relating to one anothe
 
 * **Content** - The content of the box, where text and images appear
 
-#### Layers of the Box Model - Codealong (15 mins)
+### Layers of the Box Model - Codealong (15 mins)
 
 Let's get go into some more detail and practice with each of these elements of The Box Model.
 
 
-#### Margin
+### Margin
 
 The margin is the space around the element. The larger the margin, the more space between our element and the elements around it. We can adjust the margin to move our HTML elements closer to or farther from each other.
 
@@ -168,7 +195,7 @@ div {
 }
 ```
 
-#### Border
+### Border
 
 We've talked briefly about borders - the border is the edge of the element. It's what we've been making visible every time we set the border property.
 
@@ -183,13 +210,13 @@ div {
 }
 ```
 
-#### Padding and Content
+### Padding and Content
 
 The padding is the spacing between the content and the border. We can adjust this value with CSS to move the border closer to or farther from the content.
 
 Padding can be set in two ways, just like your margins.
 
-Lets add some padding to our `<div>`'s from our dev tools.  Notice, the space inside the "boxes" gets larger.  
+Lets add some padding to our `<div>`'s from our dev tools.  Notice, the space inside the "boxes" gets larger.
 
 ```css
 div {
@@ -305,7 +332,7 @@ In this small example, it doesn't seem to matter much, but it really is a signif
 
 ⇒ The "absolutely positioned" elements are positioning themselves in relation to the body element, instead of their direct parent. So if the browser window grows, that element in the bottom left is going to stick with the browser window, not hang back inside, like it was the case in the previous example.
 
-#### Relative Positioning
+### Relative Positioning
 
 Declaring `position:relative` allows you to position the element top, bottom, left, or right relative to where it would normally occur.  Let's add some CSS and see what happens:
 
@@ -322,7 +349,7 @@ Declaring `position:relative` allows you to position the element top, bottom, le
 
 
 
-#### Static Positioning
+### Static Positioning
 
 HTML elements are positioned static by default. A "static positioned" element is always positioned according to the normal flow of the page and are not affected by the top, bottom, left, and right properties.
 
@@ -341,7 +368,7 @@ If we revisit our squares from earlier in class:
 
 You rarely explicitly declare `position:static` like this because it is the default.
 
-#### Fixed Positioning
+### Fixed Positioning
 
 An element with fixed position is positioned relative to the browser window.  It will not move even if the window is scrolled, so a fixed positioned element will stay right where it is creating an effect a bit like the old school "frames" days.
 
@@ -359,7 +386,7 @@ Try it out:
 ```
 
 
-#### Absolute Positioning
+### Absolute Positioning
 
 Specifying `position:absolute` _removes the element from the document_ and places it exactly where you tell it to be.
 
@@ -376,7 +403,7 @@ Specifying `position:absolute` _removes the element from the document_ and place
 
 
 
-##### Relative Positioning
+### Relative Positioning
 
 Declaring `position:relative` allows you to position the element top, bottom, left, or right relative to where it would normally occur.
 
@@ -405,7 +432,7 @@ Floated elements remain a part of the flow of the web page. This is distinctly d
 
 There are four valid values for the float property. "Left" and "right" float elements those directions, respectively. "None" (the default) ensures the element will not float and "inherit" which will assume the float value from that elements parent element.
 
-#### Clear
+### Clear
 
 All elements will float next to floated items until they are specifically cleared. Think about the text on the page.
 
@@ -413,9 +440,9 @@ All elements will float next to floated items until they are specifically cleare
 <img src="https://cloud.githubusercontent.com/assets/40461/8234478/287c1156-15d4-11e5-9901-ba9090a5bf70.png">
 </p>
 
-## Using position, floats, and clears to create columns - Code along (20 mins)
+### Using position, floats, and clears to create columns - Code along (20 mins)
 
-Now that we have the basics of relative and absolute positioning, lets create a two column layout by changing the heights; then, we'll investigate how to do this with floats and clears for a more effective approach.  
+Now that we have the basics of relative and absolute positioning, lets create a two column layout by changing the heights; then, we'll investigate how to do this with floats and clears for a more effective approach.
 
 So, without clears, change the heights of square1 and square2 to 200px and absolutely position the two squares like so:
 
@@ -472,7 +499,7 @@ We can reveal those missing divs by declaring their absolute position in the bot
 
 This works fine when we know the exact sizes of our elements but what if we were building something like a blog and we had text in those columns or surrounding them? We won't always know the exact amount of text or their font sizes. This is where floats can help us.
 
-#### Floats to create multicolumn layouts
+### Floats to create multicolumn layouts
 
 If our element sizes are variable or dynamic we can use floats to allow text/other elements to wrap around the floated element.  To illustrate this, lets first go to a favorite ipsum generator and grab four paragraphs of text.
 
@@ -507,7 +534,7 @@ Back in our CSS remove the absolute positioning from our "square2" div and repla
 
 Note that our text is aware that our "square2" div wants to be as left as possible and kindly wraps it in a nice text hug.
 
-#### Floats with clears
+### Floats with clears
 
 While floats make other elements aware of their location and get text hugs, clears make other elements aware and are told not to touch.
 
@@ -522,7 +549,7 @@ Lets go back to our CSS and change our "square2" div's positioning from float:le
 - How do floats work with clears to create a multicolumn layout?
 - Compare inline-block, block, and inline.
 
-##Addtional Resources
+## Addtional Resources
 [box model w3 schools video](https://www.youtube.com/watch?v=lPm8lK4C7nc)
 
 [w3 schools boxmodel] (http://www.w3schools.com/css/css_boxmodel.asp)
@@ -532,6 +559,6 @@ Lets go back to our CSS and change our "square2" div's positioning from float:le
 
 ## Sample Quiz Questions
 
-*  What is the margin of the box model? 
+*  What is the margin of the box model?
 * What is the padding of the box model?
-* Where is the border in the box model? 
+* Where is the border in the box model?
